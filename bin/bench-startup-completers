@@ -12,12 +12,14 @@ use Benchmark::Command;
 Benchmark::Command::run(
     undef,
     {
-        'lcpan (subcommand)' => [{env=>{COMP_LINE=>"CMD st", COMP_POINT=>6}},
-                                 qw/lcpan/],
-        'lcpan stats (opt)'  => [{env=>{COMP_LINE=>"CMD stats --js", COMP_POINT=>14}},
-                                 qw/lcpan/],
-        'pause (subcommand)' => [{env=>{COMP_LINE=>"CMD upl", COMP_POINT=>7}},
-                                 qw/pause/],
+        'lcpan (subcommand)'   => [{env=>{COMP_LINE=>"CMD st", COMP_POINT=>6}},
+                                   qw/lcpan/],
+        'lcpan stats (opt)'    => [{env=>{COMP_LINE=>"CMD stats --js", COMP_POINT=>14}},
+                                   qw/lcpan/],
+        'pause (subcommand)'   => [{env=>{COMP_LINE=>"CMD upl", COMP_POINT=>7}},
+                                   qw/pause/],
+        'pause-u (subcommand)' => [{env=>{COMP_LINE=>"CMD upl", COMP_POINT=>7}},
+                                   qw/pause-unpacked/],
     },
     {
         # skip_not_found => 1,
