@@ -20,6 +20,10 @@ Benchmark::Command::run(
                                    qw/pause/],
         'pause-u (subcommand)' => [{env=>{COMP_LINE=>"CMD upl", COMP_POINT=>7}},
                                    qw/pause-unpacked/],
+        '_cpanm'               => [{env=>{COMP_LINE=>"CMD --for", COMP_POINT=>9}},
+                                   qw/_cpanm/],
+        '_youtube-dl'          => [{env=>{COMP_LINE=>"CMD --no-pl", COMP_POINT=>11}},
+                                   qw/_youtube-dl/],
     },
     {
         # skip_not_found => 1,
