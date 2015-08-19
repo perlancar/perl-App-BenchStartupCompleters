@@ -24,6 +24,8 @@ Benchmark::Command::run(
                                    qw/_cpanm/],
         '_youtube-dl'          => [{env=>{COMP_LINE=>"CMD --no-pl", COMP_POINT=>11}},
                                    qw/_youtube-dl/],
+        '_hr'                  => [{env=>{COMP_LINE=>"CMD --he", COMP_POINT=>8}},
+                                   qw/_hr/],
     },
     {
         # skip_not_found => 1,
